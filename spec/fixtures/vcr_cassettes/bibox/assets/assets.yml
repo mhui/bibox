@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.bibox.com/v1/transfer
+    body:
+      encoding: UTF-8
+      string: apikey=API_KEY&cmds=%5B%7B%22cmd%22%3A%22transfer%2Fassets%22%2C%22body%22%3A%7B%22select%22%3A1%7D%7D%5D&sign=ebc2ff0d1fd67749744b448a81d5781a
+    headers:
+      User-Agent:
+      - Bibox Ruby
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 30 Jan 2018 20:40:15 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d3d4049a5a9a62121058536b6ee918d381517344813; expires=Wed, 30-Jan-19
+        20:40:13 GMT; path=/; domain=.bibox.com; HttpOnly; Secure
+      Access-Control-Allow-Origin:
+      - undefined
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      Access-Control-Allow-Headers:
+      - Content-Type, Accept, x-access-token, X-Requested-With
+      Access-Control-Max-Age:
+      - '172800'
+      X-Ca-Request-Id:
+      - F09C0F14-CED0-44BC-903D-CC6FF6F72F10
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Etag:
+      - W/"213-6XUoYWmptCJPFMPcP4bmOpR2Jt8"
+      Vary:
+      - Accept-Encoding
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 3e573ebc3e03549e-MAD
+    body:
+      encoding: ASCII-8BIT
+      string: '{"result":[{"result":{"total_btc":"0.22124915","total_cny":"14199.77","total_usd":"2244.98","assets_list":[{"coin_symbol":"BIX","BTCValue":"0.06887000","CNYValue":"4420.08","USDValue":"698.81","balance":"500.00000000","freeze":"0.00000000"},{"coin_symbol":"ETH","BTCValue":"0.00000004","CNYValue":"0.00","USDValue":"0.00","balance":"0.00000040","freeze":"0.00000000"},{"coin_symbol":"HPB","BTCValue":"0.15237911","CNYValue":"9779.69","USDValue":"1546.17","balance":"227.02490000","freeze":"0.00000000"}]},"cmd":"transfer/assets"}]}'
+    http_version: 
+  recorded_at: Tue, 30 Jan 2018 20:40:15 GMT
+recorded_with: VCR 4.0.0

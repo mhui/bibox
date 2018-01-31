@@ -1,0 +1,78 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.bibox.com/v1/transfer
+    body:
+      encoding: UTF-8
+      string: apikey=API_KEY&cmds=%5B%7B%22cmd%22%3A%22transfer%2FcoinList%22%2C%22body%22%3A%7B%7D%7D%5D&sign=2b48c5aa44e042bd320055b9648d616f
+    headers:
+      User-Agent:
+      - Bibox Ruby
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 30 Jan 2018 17:20:10 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '1171'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d1b6134cd18e9c977e7bd8e3770020b611517332810; expires=Wed, 30-Jan-19
+        17:20:10 GMT; path=/; domain=.bibox.com; HttpOnly; Secure
+      Access-Control-Allow-Origin:
+      - undefined
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      Access-Control-Allow-Headers:
+      - Content-Type, Accept, x-access-token, X-Requested-With
+      Access-Control-Max-Age:
+      - '172800'
+      X-Ca-Request-Id:
+      - 32B38221-8A95-4370-A5CB-69B3D0989451
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Etag:
+      - W/"322e-XB1RhSe2BJNXdf3tIql49/0qLsQ"
+      Vary:
+      - Accept-Encoding
+      X-Ca-Error-Message:
+      - OK
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 3e5619afc9662f89-MAD
+    body:
+      encoding: ASCII-8BIT
+      string: '{"result":[{"result":[{"totalBalance":"0.00000000","balance":"0.00000000","freeze":"0.00000000","id":42,"symbol":"BTC","icon_url":"https://res.linkcoin.pro/coinicon/BTC.png","describe_url":null,"name":"Bitcoin","enable_withdraw":1,"enable_deposit":1,"confirm_count":3,"BTCValue":"0.00000000","CNYValue":"0.00000000","USDValue":"0.00000000"},{"totalBalance":"500.00000000","balance":"500.00000000","freeze":"0.00000000","id":43,"symbol":"BIX","icon_url":"https://res.linkcoin.pro/coinicon/BIX.png","describe_url":null,"name":"BIX
+        Token","enable_withdraw":1,"enable_deposit":1,"confirm_count":12,"BTCValue":"0.06941500","CNYValue":"4565.84173415","USDValue":"721.85977385"},{"totalBalance":"0.62906602","balance":"0.00000026","freeze":"0.62906576","id":44,"symbol":"ETH","icon_url":"https://res.linkcoin.pro/coinicon/ETH.png","describe_url":null,"name":"Ethereum","enable_withdraw":1,"enable_deposit":1,"confirm_count":12,"BTCValue":"0.06482944","CNYValue":"4264.22208716","USDValue":"674.17369473"},{"totalBalance":"0.00000000","balance":"0.00000000","freeze":"0.00000000","id":45,"symbol":"ETC","icon_url":"https://res.linkcoin.pro/coinicon/ETC.png","describe_url":null,"name":"EthereumClassic","enable_withdraw":1,"enable_deposit":1,"confirm_count":20,"BTCValue":"0.00000000","CNYValue":"0.00000000","USDValue":"0.00000000"},{"totalBalance":"0.00000000","balance":"0.00000000","freeze":"0.00000000","id":46,"symbol":"BCH","icon_url":"https://res.linkcoin.pro/coinicon/BCC.png","describe_url":null,"name":"BitcoinCash","enable_withdraw":1,"enable_deposit":1,"confirm_count":3,"BTCValue":"0.00000000","CNYValue":"0.00000000","USDValue":"0.00000000"},{"totalBalance":"0.00000000","balance":"0.00000000","freeze":"0.00000000","id":47,"symbol":"LTC","icon_url":"https://res.linkcoin.pro/coinicon/LTC.png","describe_url":null,"name":"Litecoin","enable_withdraw":1,"enable_deposit":1,"confirm_count":3,"BTCValue":"0.00000000","CNYValue":"0.00000000","USDValue":"0.00000000"},{"totalBalance":"0.00000000","balance":"0.00000000","freeze":"0.00000000","id":48,"symbol":"ZEC","icon_url":"https://res.linkcoin.pro/coinicon/ZEC.png","describe_url":null,"name":"Zcash","enable_withdraw":0,"enable_deposit":0,"confirm_count":3,"BTCValue":"0.00000000","CNYValue":"0.00","USDValue":"0.00"},{"totalBalance":"0.00000000","balance":"0.00000000","freeze":"0.00000000","id":49,"symbol":"BCD","icon_url":"https://res.linkcoin.pro/coinicon/BCC.png","describe_url":null,"name":"BitcoinDiamond","enable_withdraw":0,"enable_deposit":0,"confirm_count":6,"BTCValue":"0.00000000","CNYValue":"0.00","USDValue":"0.00"},{"totalBalance":"0.00000000","balance":"0.00000000","freeze":"0.00000000","id":60,"symbol":"USDT","icon_url":"https://res.linkcoin.pro/coinicon/USDT.png","describe_url":null,"name":"USDT","enable_withdraw":1,"enable_deposit":1,"confirm_count":6,"BTCValue":"0.00000000","CNYValue":"0.00000000","USDValue":"0.00000000"},{"totalBalance":"0.00000000","balance":"0.00000000","freeze":"0.00000000","id":61,"symbol":"EOS","icon_url":"https://res.linkcoin.pro/coinicon/EOS.png","describe_url":null,"name":"EOS","enable_withdraw":1,"enable_deposit":1,"confirm_count":12,"BTCValue":"0.00000000","CNYValue":"0.00000000","USDValue":"0.00000000"},{"totalBalance":"0.00000000","balance":"0.00000000","freeze":"0.00000000","id":62,"symbol":"TNB","icon_url":"https://res.linkcoin.pro/coinicon/ETH.png","describe_url":null,"name":"TimeNewBank","enable_withdraw":1,"enable_deposit":1,"confirm_count":12,"BTCValue":"0.00000000","CNYValue":"0.00000000","USDValue":"0.00000000"},{"totalBalance":"0.00000000","balance":"0.00000000","freeze":"0.00000000","id":63,"symbol":"BTM","icon_url":"https://res.linkcoin.pro/coinicon/BTM.png","describe_url":null,"name":"Bytom","enable_withdraw":1,"enable_deposit":1,"confirm_count":12,"BTCValue":"0.00000000","CNYValue":"0.00000000","USDValue":"0.00000000"},{"totalBalance":"0.00000000","balance":"0.00000000","freeze":"0.00000000","id":64,"symbol":"CMT","icon_url":"https://res.linkcoin.pro/coinicon/CMT.png","describe_url":null,"name":"CyberMiles","enable_withdraw":1,"enable_deposit":1,"confirm_count":12,"BTCValue":"0.00000000","CNYValue":"0.00000000","USDValue":"0.00000000"},{"totalBalance":"0.00000000","balance":"0.00000000","freeze":"0.00000000","id":65,"symbol":"PRA","icon_url":"https://res.linkcoin.pro/coinicon/PRO.png","describe_url":null,"name":"ProToken","enable_withdraw":1,"enable_deposit":1,"confirm_count":12,"BTCValue":"0.00000000","CNYValue":"0.00000000","USDValue":"0.00000000"},{"totalBalance":"0.00000000","balance":"0.00000000","freeze":"0.00000000","id":66,"symbol":"LEND","icon_url":"https://res.linkcoin.pro/coinicon/LEND.png","describe_url":null,"name":"EthLend","enable_withdraw":1,"enable_deposit":1,"confirm_count":12,"BTCValue":"0.00000000","CNYValue":"0.00000000","USDValue":"0.00000000"},{"totalBalance":"0.00000000","balance":"0.00000000","freeze":"0.00000000","id":67,"symbol":"RDN","icon_url":"https://res.linkcoin.pro/coinicon/RDN.png","describe_url":null,"name":"Raiden
+        Token","enable_withdraw":1,"enable_deposit":1,"confirm_count":12,"BTCValue":"0.00000000","CNYValue":"0.00000000","USDValue":"0.00000000"},{"totalBalance":"0.00000000","balance":"0.00000000","freeze":"0.00000000","id":68,"symbol":"MANA","icon_url":"https://res.linkcoin.pro/coinicon/MANA.png","describe_url":null,"name":"Decentraland","enable_withdraw":1,"enable_deposit":1,"confirm_count":12,"BTCValue":"0.00000000","CNYValue":"0.00000000","USDValue":"0.00000000"},{"totalBalance":"137.92250000","balance":"137.92250000","freeze":"0.00000000","id":69,"symbol":"HPB","icon_url":"https://res.linkcoin.pro/coinicon/HPB.png","describe_url":null,"name":"HPBCoin","enable_withdraw":1,"enable_deposit":1,"confirm_count":12,"BTCValue":"0.09896215","CNYValue":"6509.33551273","USDValue":"1029.12622354"},{"totalBalance":"0.00000000","balance":"0.00000000","freeze":"0.00000000","id":70,"symbol":"SBTC","icon_url":null,"describe_url":null,"name":"SuperBitcoin","enable_withdraw":0,"enable_deposit":0,"confirm_count":6,"BTCValue":"0.00000000","CNYValue":"0.00000000","USDValue":"0.00000000"},{"totalBalance":"0.00000000","balance":"0.00000000","freeze":"0.00000000","id":71,"symbol":"ETF","icon_url":null,"describe_url":null,"name":"ETF","enable_withdraw":0,"enable_deposit":0,"confirm_count":6,"BTCValue":"0.00000000","CNYValue":"0.00","USDValue":"0.00"},{"totalBalance":"0.00000000","balance":"0.00000000","freeze":"0.00000000","id":72,"symbol":"EMO","icon_url":null,"describe_url":null,"name":"EMO","enable_withdraw":0,"enable_deposit":0,"confirm_count":12,"BTCValue":"0.00000000","CNYValue":"0.00","USDValue":"0.00"},{"totalBalance":"0.00000000","balance":"0.00000000","freeze":"0.00000000","id":73,"symbol":"MKR","icon_url":"https://res.linkcoin.pro/coinicon/MKR.png","describe_url":null,"name":"Maker","enable_withdraw":1,"enable_deposit":1,"confirm_count":12,"BTCValue":"0.00000000","CNYValue":"0.00000000","USDValue":"0.00000000"},{"totalBalance":"0.00000000","balance":"0.00000000","freeze":"0.00000000","id":74,"symbol":"DAI","icon_url":"https://res.linkcoin.pro/coinicon/DAI.png","describe_url":null,"name":"DAI","enable_withdraw":1,"enable_deposit":1,"confirm_count":12,"BTCValue":"0.00000000","CNYValue":"0.00000000","USDValue":"0.00000000"},{"totalBalance":"0.00000000","balance":"0.00000000","freeze":"0.00000000","id":75,"symbol":"ELF","icon_url":"https://res.linkcoin.pro/coinicon/ELF.png","describe_url":null,"name":"ELF
+        Token","enable_withdraw":1,"enable_deposit":1,"confirm_count":12,"BTCValue":"0.00000000","CNYValue":"0.00000000","USDValue":"0.00000000"},{"totalBalance":"0.00000000","balance":"0.00000000","freeze":"0.00000000","id":76,"symbol":"ITC","icon_url":"https://res.linkcoin.pro/coinicon/ITC.png","describe_url":null,"name":"IOT
+        on Chain","enable_withdraw":1,"enable_deposit":1,"confirm_count":12,"BTCValue":"0.00000000","CNYValue":"0.00000000","USDValue":"0.00000000"},{"totalBalance":"0.00000000","balance":"0.00000000","freeze":"0.00000000","id":77,"symbol":"MOT","icon_url":"https://res.linkcoin.pro/coinicon/MOT.png","describe_url":null,"name":"MOT","enable_withdraw":1,"enable_deposit":1,"confirm_count":12,"BTCValue":"0.00000000","CNYValue":"0.00000000","USDValue":"0.00000000"},{"totalBalance":"0.00000000","balance":"0.00000000","freeze":"0.00000000","id":78,"symbol":"BTO","icon_url":"https://res.linkcoin.pro/coinicon/BTO.png","describe_url":null,"name":"BTOCoin","enable_withdraw":1,"enable_deposit":1,"confirm_count":12,"BTCValue":"0.00000000","CNYValue":"0.00000000","USDValue":"0.00000000"},{"totalBalance":"0.00000000","balance":"0.00000000","freeze":"0.00000000","id":81,"symbol":"GNX","icon_url":"https://res.linkcoin.pro/coinicon/GNX.png","describe_url":null,"name":"Genaro
+        X ","enable_withdraw":1,"enable_deposit":1,"confirm_count":12,"BTCValue":"0.00000000","CNYValue":"0.00000000","USDValue":"0.00000000"},{"totalBalance":"0.00000000","balance":"0.00000000","freeze":"0.00000000","id":82,"symbol":"CAT","icon_url":"https://res.linkcoin.pro/coinicon/CAT.png","describe_url":null,"name":"BitClave","enable_withdraw":1,"enable_deposit":1,"confirm_count":12,"BTCValue":"0.00000000","CNYValue":"0.00000000","USDValue":"0.00000000"},{"totalBalance":"0.00000000","balance":"0.00000000","freeze":"0.00000000","id":83,"symbol":"GTC","icon_url":"https://res.linkcoin.pro/coinicon/GTC.png","describe_url":null,"name":"Game.com
+        Token","enable_withdraw":1,"enable_deposit":1,"confirm_count":12,"BTCValue":"0.00000000","CNYValue":"0.00000000","USDValue":"0.00000000"},{"totalBalance":"0.00000000","balance":"0.00000000","freeze":"0.00000000","id":84,"symbol":"AWR","icon_url":"https://res.linkcoin.pro/coinicon/AWR.png","describe_url":null,"name":"AWARE
+        Token","enable_withdraw":1,"enable_deposit":1,"confirm_count":10,"BTCValue":"0.00000000","CNYValue":"0.00000000","USDValue":"0.00000000"},{"totalBalance":"0.00000000","balance":"0.00000000","freeze":"0.00000000","id":85,"symbol":"CAG","icon_url":"https://res.linkcoin.pro/coinicon/CAG.png","describe_url":null,"name":"Change
+        COIN","enable_withdraw":1,"enable_deposit":1,"confirm_count":12,"BTCValue":"0.00000000","CNYValue":"0.00000000","USDValue":"0.00000000"},{"totalBalance":"0.00000000","balance":"0.00000000","freeze":"0.00000000","id":86,"symbol":"SHOW","icon_url":"https://res.linkcoin.pro/coinicon/SHOW.png","describe_url":null,"name":"ShowCoin","enable_withdraw":1,"enable_deposit":1,"confirm_count":12,"BTCValue":"0.00000000","CNYValue":"0.00000000","USDValue":"0.00000000"},{"totalBalance":"0.00000000","balance":"0.00000000","freeze":"0.00000000","id":87,"symbol":"AIDOC","icon_url":"https://res.linkcoin.pro/coinicon/AIDOC.png","describe_url":null,"name":"AI
+        Doctor","enable_withdraw":1,"enable_deposit":1,"confirm_count":12,"BTCValue":"0.00000000","CNYValue":"0.00000000","USDValue":"0.00000000"},{"totalBalance":"0.00000000","balance":"0.00000000","freeze":"0.00000000","id":88,"symbol":"AMM","icon_url":"https://res.linkcoin.pro/coinicon/AMM.png","describe_url":null,"name":"Micro
+        Money","enable_withdraw":1,"enable_deposit":1,"confirm_count":12,"BTCValue":"0.00000000","CNYValue":"0.00000000","USDValue":"0.00000000"},{"totalBalance":"0.00000000","balance":"0.00000000","freeze":"0.00000000","id":89,"symbol":"WAX","icon_url":null,"describe_url":null,"name":"WAX
+        Token","enable_withdraw":1,"enable_deposit":1,"confirm_count":12,"BTCValue":"0.00000000","CNYValue":"0.00000000","USDValue":"0.00000000"},{"totalBalance":"0.00000000","balance":"0.00000000","freeze":"0.00000000","id":90,"symbol":"C20","icon_url":null,"describe_url":null,"name":"Crypto20","enable_withdraw":1,"enable_deposit":1,"confirm_count":12,"BTCValue":"0.00000000","CNYValue":"0.00000000","USDValue":"0.00000000"},{"totalBalance":"0.00000000","balance":"0.00000000","freeze":"0.00000000","id":91,"symbol":"SNOV","icon_url":null,"describe_url":null,"name":"Snovio","enable_withdraw":1,"enable_deposit":1,"confirm_count":12,"BTCValue":"0.00000000","CNYValue":"0.00000000","USDValue":"0.00000000"},{"totalBalance":"0.00000000","balance":"0.00000000","freeze":"0.00000000","id":92,"symbol":"BLT","icon_url":null,"describe_url":null,"name":"Bloom
+        Token","enable_withdraw":1,"enable_deposit":1,"confirm_count":12,"BTCValue":"0.00000000","CNYValue":"0.00000000","USDValue":"0.00000000"},{"totalBalance":"0.00000000","balance":"0.00000000","freeze":"0.00000000","id":93,"symbol":"DTA","icon_url":null,"describe_url":null,"name":"Data
+        Token","enable_withdraw":1,"enable_deposit":1,"confirm_count":12,"BTCValue":"0.00000000","CNYValue":"0.00000000","USDValue":"0.00000000"},{"totalBalance":"0.00000000","balance":"0.00000000","freeze":"0.00000000","id":94,"symbol":"GTO","icon_url":null,"describe_url":null,"name":"Gifto","enable_withdraw":0,"enable_deposit":0,"confirm_count":12,"BTCValue":"0.00000000","CNYValue":"0.00","USDValue":"0.00"}],"cmd":"transfer/coinList"}]}'
+    http_version: 
+  recorded_at: Tue, 30 Jan 2018 17:20:10 GMT
+recorded_with: VCR 4.0.0

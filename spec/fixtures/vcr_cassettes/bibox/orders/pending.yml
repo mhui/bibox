@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.bibox.com/v1/orderpending
+    body:
+      encoding: UTF-8
+      string: apikey=API_KEY&cmds=%5B%7B%22cmd%22%3A%22orderpending%2ForderPendingList%22%2C%22body%22%3A%7B%22page%22%3A1%2C%22size%22%3A10%7D%7D%5D&sign=3b9d50aba11c8b8dd3bbcba2be4e78a3
+    headers:
+      User-Agent:
+      - Bibox Ruby
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 30 Jan 2018 16:09:13 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d57e7f2e492eaac4f0b59a9ec0ae3c5981517328552; expires=Wed, 30-Jan-19
+        16:09:12 GMT; path=/; domain=.bibox.com; HttpOnly; Secure
+      Access-Control-Allow-Origin:
+      - undefined
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      Access-Control-Allow-Headers:
+      - Content-Type, Accept, x-access-token, X-Requested-With
+      Access-Control-Max-Age:
+      - '172800'
+      X-Ca-Request-Id:
+      - 02E0023A-B245-4FCF-9309-66488DF4F93D
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Etag:
+      - W/"286-U7/ilTUuvXC/SaHZOYmv0D4fvrI"
+      Vary:
+      - Accept-Encoding
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 3e55b1beec8e0dc3-MAD
+    body:
+      encoding: ASCII-8BIT
+      string: '{"result":[{"result":{"count":2,"page":1,"items":[{"id":188571145,"createdAt":1517321262000,"account_type":0,"coin_symbol":"HPB","currency_symbol":"ETH","order_side":1,"order_type":2,"price":"0.00721957","amount":"137.9225","money":"0.99574114","deal_amount":"0.0000","deal_percent":"0.00%","status":1,"unexecuted":"137.9225"},{"id":188282152,"createdAt":1517313745000,"account_type":0,"coin_symbol":"ITC","currency_symbol":"ETH","order_side":1,"order_type":2,"price":"0.00285939","amount":"220.0000","money":"0.62906580","deal_amount":"0.0000","deal_percent":"0.00%","status":1,"unexecuted":"220.0000"}]},"cmd":"orderpending/orderPendingList"}]}'
+    http_version: 
+  recorded_at: Tue, 30 Jan 2018 16:09:13 GMT
+recorded_with: VCR 4.0.0

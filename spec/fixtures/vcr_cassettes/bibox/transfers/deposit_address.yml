@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.bibox.com/v1/transfer
+    body:
+      encoding: UTF-8
+      string: apikey=API_KEY&cmds=%5B%7B%22cmd%22%3A%22transfer%2FtransferIn%22%2C%22body%22%3A%7B%22coin_symbol%22%3A%22BTC%22%7D%7D%5D&sign=df1f962e45efe576bb59f637e39ff769
+    headers:
+      User-Agent:
+      - Bibox Ruby
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 30 Jan 2018 22:35:40 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d2d01be69fb12db955de8db7f3ea3a7671517351739; expires=Wed, 30-Jan-19
+        22:35:39 GMT; path=/; domain=.bibox.com; HttpOnly; Secure
+      Access-Control-Allow-Origin:
+      - undefined
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      Access-Control-Allow-Headers:
+      - Content-Type, Accept, x-access-token, X-Requested-With
+      Access-Control-Max-Age:
+      - '172800'
+      X-Ca-Request-Id:
+      - 9465E4F2-61BB-4C41-B364-D814008091C4
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Etag:
+      - W/"58-kNX1tzM8i2C9RZH5N6GEXoxvOIQ"
+      Vary:
+      - Accept-Encoding
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 3e57e7d3b8a12f77-MAD
+    body:
+      encoding: ASCII-8BIT
+      string: '{"result":[{"result":"MASKED_BTC_ADDRESS","cmd":"transfer/transferIn"}]}'
+    http_version: 
+  recorded_at: Tue, 30 Jan 2018 22:35:40 GMT
+recorded_with: VCR 4.0.0

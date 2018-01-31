@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.bibox.com/v1/orderpending
+    body:
+      encoding: UTF-8
+      string: apikey=API_KEY&cmds=%5B%7B%22cmd%22%3A%22orderpending%2FcancelTrade%22%2C%22body%22%3A%7B%22orders_id%22%3A%22189689365%22%7D%7D%5D&sign=5b3025e8131f881909baccd8123d7716
+    headers:
+      User-Agent:
+      - Bibox Ruby
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 30 Jan 2018 21:40:08 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=db4cec993d0e07336e3011c803444ccbf1517348406; expires=Wed, 30-Jan-19
+        21:40:06 GMT; path=/; domain=.bibox.com; HttpOnly; Secure
+      Access-Control-Allow-Origin:
+      - undefined
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      Access-Control-Allow-Headers:
+      - Content-Type, Accept, x-access-token, X-Requested-With
+      Access-Control-Max-Age:
+      - '172800'
+      X-Ca-Request-Id:
+      - 19DA0704-E8FE-442A-BE78-5106C1B39CF3
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Etag:
+      - W/"6d-UapLPCr8LagO4RHKyDHYJsaJtIQ"
+      Vary:
+      - Accept-Encoding
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 3e57967779c02f3b-MAD
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJlcnJvciI6eyJjb2RlIjoiMjAzMyIsIm1zZyI6IuaTjeS9nOWksei0pe+8geiuouWNleW3suWujOaIkOaIluW3suaSpOmUgCJ9LCJjbWQiOiJvcmRlcnBlbmRpbmcvY2FuY2VsVHJhZGUifQ==
+    http_version: 
+  recorded_at: Tue, 30 Jan 2018 21:40:08 GMT
+recorded_with: VCR 4.0.0

@@ -1,0 +1,65 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.bibox.com/v1/orderpending
+    body:
+      encoding: UTF-8
+      string: apikey=API_KEY&cmds=%5B%7B%22cmd%22%3A%22orderpending%2ForderHistoryList%22%2C%22body%22%3A%7B%22page%22%3A1%2C%22size%22%3A10%7D%7D%5D&sign=ce98bd3e4e1275045ad980d75f55f14d
+    headers:
+      User-Agent:
+      - Bibox Ruby
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 30 Jan 2018 16:57:48 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '375'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d3da171dde3b031d978127ffc81504fc31517331468; expires=Wed, 30-Jan-19
+        16:57:48 GMT; path=/; domain=.bibox.com; HttpOnly; Secure
+      Access-Control-Allow-Origin:
+      - undefined
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      Access-Control-Allow-Headers:
+      - Content-Type, Accept, x-access-token, X-Requested-With
+      Access-Control-Max-Age:
+      - '172800'
+      X-Ca-Request-Id:
+      - D3DEC420-5A58-4D7D-94B6-E2CF6E29EE31
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Etag:
+      - W/"61a-YVVfSgFv5FDF9UrCaUfeFc54QPM"
+      Vary:
+      - Accept-Encoding
+      X-Ca-Error-Message:
+      - OK
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 3e55f8eb0fe00de7-MAD
+    body:
+      encoding: ASCII-8BIT
+      string: '{"result":[{"result":{"count":6,"page":1,"items":[{"id":202901462,"createdAt":1517330888000,"account_type":0,"coin_symbol":"HPB","currency_symbol":"ETH","order_side":1,"order_type":2,"price":"0.00721957","amount":"15.7257","money":"0.11353279","fee":"0.00000000","pay_bix":1,"fee_symbol":"BIX"},{"id":202901442,"createdAt":1517330887000,"account_type":0,"coin_symbol":"HPB","currency_symbol":"ETH","order_side":1,"order_type":2,"price":"0.00721957","amount":"1.3424","money":"0.00969155","fee":"0.00000000","pay_bix":1,"fee_symbol":"BIX"},{"id":202899031,"createdAt":1517330830000,"account_type":0,"coin_symbol":"HPB","currency_symbol":"ETH","order_side":1,"order_type":2,"price":"0.00721957","amount":"10.5622","money":"0.07625454","fee":"0.00000000","pay_bix":1,"fee_symbol":"BIX"},{"id":202898490,"createdAt":1517330822000,"account_type":0,"coin_symbol":"HPB","currency_symbol":"ETH","order_side":1,"order_type":2,"price":"0.00721957","amount":"68.7160","money":"0.49609997","fee":"0.00000000","pay_bix":1,"fee_symbol":"BIX"},{"id":202871261,"createdAt":1517330318000,"account_type":0,"coin_symbol":"HPB","currency_symbol":"ETH","order_side":1,"order_type":2,"price":"0.00721957","amount":"41.5762","money":"0.30016228","fee":"0.00000000","pay_bix":1,"fee_symbol":"BIX"},{"id":201982272,"createdAt":1517308226000,"account_type":0,"coin_symbol":"BIX","currency_symbol":"ETH","order_side":1,"order_type":2,"price":"0.00133046","amount":"500.0000","money":"0.66523000","fee":"0.00000000","pay_bix":1,"fee_symbol":"BIX"}]},"cmd":"orderpending/orderHistoryList"}]}'
+    http_version: 
+  recorded_at: Tue, 30 Jan 2018 16:57:48 GMT
+recorded_with: VCR 4.0.0

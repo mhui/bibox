@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.bibox.com/v1/orderpending
+    body:
+      encoding: UTF-8
+      string: apikey=API_KEY&cmds=%5B%7B%22cmd%22%3A%22orderpending%2Ftrade%22%2C%22body%22%3A%7B%22pair%22%3A%22BIX_ETH%22%2C%22account_type%22%3A0%2C%22order_type%22%3A2%2C%22order_side%22%3A2%2C%22pay_bix%22%3A1%2C%22price%22%3A0.002%2C%22amount%22%3A10%2C%22money%22%3A0.02%7D%7D%5D&sign=8bd405eb0ee12869830956d564b7d22a
+    headers:
+      User-Agent:
+      - Bibox Ruby
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 30 Jan 2018 21:25:30 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d12c295c6c4603527d9578b1e68f12f571517347530; expires=Wed, 30-Jan-19
+        21:25:30 GMT; path=/; domain=.bibox.com; HttpOnly; Secure
+      Access-Control-Allow-Origin:
+      - undefined
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      Access-Control-Allow-Headers:
+      - Content-Type, Accept, x-access-token, X-Requested-With
+      Access-Control-Max-Age:
+      - '172800'
+      X-Ca-Request-Id:
+      - B06B5DE8-6FCF-4B86-9949-0A20DA272034
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Etag:
+      - W/"3c-hbXhvvTkcqcEsuwya7CmMp0N8VI"
+      Vary:
+      - Accept-Encoding
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 3e57810e9ab0549e-MAD
+    body:
+      encoding: ASCII-8BIT
+      string: '{"result":[{"result":189689365,"cmd":"orderpending/trade"}]}'
+    http_version: 
+  recorded_at: Tue, 30 Jan 2018 21:25:30 GMT
+recorded_with: VCR 4.0.0

@@ -1,0 +1,71 @@
+#!/usr/bin/env ruby
+
+require "bundler/setup"
+require "bibox"
+
+# Example implementation of websockets
+
+class WebsocketWrapper
+  attr_accessor :client
+  
+  def initialize
+    self.client = ::Bibox::Websocket::Client.new
+  end
+  
+  def run!
+    begin
+      self.set_callbacks
+      self.client.start!
+    ensure
+      self.client.stop!
+    end
+  end
+  
+  def set_callbacks
+    # Subscription callback
+    self.client.callbacks[:subscribe]     = -> { subscribe! }
+    
+    # Received messages callbacks
+    self.client.callbacks[:trading_pairs] = -> (data) { trading_pairs(data) }
+    self.client.callbacks[:order_book]    = -> (data) { order_book(data) }
+    self.client.callbacks[:trades]        = -> (data) { trades(data) }
+    self.client.callbacks[:ticker]        = -> (data) { ticker(data) }
+    self.client.callbacks[:klines]        = -> (data) { klines(data) }
+  end
+  
+  def subscribe!(pairs: ["BIX_ETH", "BIX_BTC"])
+    self.client.subscribe_to_trading_pairs!
+    self.client.subscribe_to_order_book!(pairs: pairs)
+    self.client.subscribe_to_trades!(pairs: pairs)
+    self.client.subscribe_to_ticker!(pairs: pairs)
+    self.client.subscribe_to_klines!(pairs: pairs, periods: ["5min"])
+  end
+  
+  def trading_pairs(data)
+    puts "\nReceived trading pairs message!"
+    pp data
+  end
+  
+  def order_book(data)
+    puts "\nReceived order book message!"
+    pp data
+  end
+  
+  def trades(data)
+    puts "\nReceived trades message!"
+    pp data
+  end
+  
+  def ticker(data)
+    puts "\nReceived ticker message!"
+    pp data
+  end
+  
+  def klines(data)
+    puts "\nReceived klines message!"
+    pp data
+  end
+  
+end
+
+WebsocketWrapper.new.run!

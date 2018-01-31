@@ -1,0 +1,31 @@
+#!/usr/bin/env ruby
+
+require "bundler/setup"
+require "bibox"
+require "yaml"
+
+cfg_path              =   File.join(File.dirname(__FILE__), "../credentials.yml")
+
+if ::File.exists?(cfg_path)
+  cfg                 =   YAML.load_file(cfg_path).fetch("full_permissions", {})
+
+  Bibox.configure do |config|
+    config.key        =   cfg["key"]
+    config.secret     =   cfg["secret"]
+  
+    config.faraday    =   {
+      user_agent: "Bibox Ruby",
+      verbose:    true
+    }
+  end
+end
+
+# You can add fixtures and/or initialization code here to make experimenting
+# with your gem easier. You can also use a different console, if you like.
+
+# (If you use this, don't forget to add pry to your Gemfile!)
+# require "pry"
+# Pry.start
+
+require "irb"
+IRB.start(__FILE__)

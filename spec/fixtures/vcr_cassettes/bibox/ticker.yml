@@ -1,0 +1,61 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.bibox.com/v1/mdata?cmd=ticker&pair=BIX_ETH
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Bibox Ruby
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 30 Jan 2018 15:27:52 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d321e2c21e1ce19d3ad76aed324b573011517326071; expires=Wed, 30-Jan-19
+        15:27:51 GMT; path=/; domain=.bibox.com; HttpOnly; Secure
+      Access-Control-Allow-Origin:
+      - undefined
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      Access-Control-Allow-Headers:
+      - Content-Type, Accept, x-access-token, X-Requested-With
+      Access-Control-Max-Age:
+      - '172800'
+      X-Ca-Request-Id:
+      - 9BC0D05F-CDE4-48BC-B8C8-F88C16A3F2B6
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Etag:
+      - W/"dc-rwduO3k73gBTZCe29SGpGDSTLMY"
+      Vary:
+      - Accept-Encoding
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 3e55752dde735486-MAD
+    body:
+      encoding: ASCII-8BIT
+      string: '{"result":{"buy":"0.001313","high":"0.00145000","last":"0.00131535","low":"0.00128800","sell":"0.00131652","timestamp":1517326052886,"vol":"4515795","last_cny":"9.14","last_usd":"1.45","percent":"-2.40%"},"cmd":"ticker"}'
+    http_version: 
+  recorded_at: Tue, 30 Jan 2018 15:27:52 GMT
+recorded_with: VCR 4.0.0

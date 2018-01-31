@@ -1,0 +1,66 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.bibox.com/v1/transfer
+    body:
+      encoding: UTF-8
+      string: apikey=API_KEY&cmds=%5B%7B%22cmd%22%3A%22transfer%2Fbills%22%2C%22body%22%3A%7B%22coin_id%22%3A0%2C%22type%22%3A-1%2C%22days%22%3A30%2C%22page%22%3A1%2C%22size%22%3A50%7D%7D%5D&sign=4e265bb3ecbdf6f457b60f186c0681e4
+    headers:
+      User-Agent:
+      - Bibox Ruby
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 30 Jan 2018 22:28:27 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '642'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=dc493e28bfd2730eeb4c58750bb4290651517351307; expires=Wed, 30-Jan-19
+        22:28:27 GMT; path=/; domain=.bibox.com; HttpOnly; Secure
+      Access-Control-Allow-Origin:
+      - undefined
+      Access-Control-Allow-Methods:
+      - POST, GET, OPTIONS
+      Access-Control-Allow-Headers:
+      - Content-Type, Accept, x-access-token, X-Requested-With
+      Access-Control-Max-Age:
+      - '172800'
+      X-Ca-Request-Id:
+      - 93760C01-5EEE-491D-B4D0-94EC1034E601
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Etag:
+      - W/"106b-HCHtzAaHhAO3SzG7611GQeH9fxQ"
+      Vary:
+      - Accept-Encoding
+      X-Ca-Error-Message:
+      - OK
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 3e57dd462de42f53-MAD
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJyZXN1bHQiOlt7InJlc3VsdCI6eyJjb3VudCI6MjIsInBhZ2UiOjEsIml0ZW1zIjpbeyJjcmVhdGVkQXQiOiIyMDE4LTAxLTMwVDE3OjM5OjM5LjAwMFoiLCJzeW1ib2wiOiJFVEgiLCJjaGFuZ2VfYW1vdW50IjoiLTAuMDM5NzIyNTUiLCJyZXN1bHRfYW1vdW50IjoiMC4wMDAwMDA0MCIsImZlZSI6IjAuMDAwMDAwMDAiLCJmZWVfc3ltYm9sIjoiIiwiY29tbWVudCI6IuWNluWHukVUSCIsImJpbGxfdHlwZSI6M30seyJjcmVhdGVkQXQiOiIyMDE4LTAxLTMwVDE3OjM5OjM5LjAwMFoiLCJzeW1ib2wiOiJIUEIiLCJjaGFuZ2VfYW1vdW50IjoiKzUuNjI2NDAwMDAiLCJyZXN1bHRfYW1vdW50IjoiMjI3LjAyNDkwMDAwIiwiZmVlIjoiMC4wMDAwMDAwMCIsImZlZV9zeW1ib2wiOiIiLCJjb21tZW50Ijoi5Lmw5YWlSFBCIiwiYmlsbF90eXBlIjo1fSx7ImNyZWF0ZWRBdCI6IjIwMTgtMDEtMzBUMTc6Mzk6MzIuMDAwWiIsInN5bWJvbCI6IkVUSCIsImNoYW5nZV9hbW91bnQiOiItMC4yNDAwNDEwMiIsInJlc3VsdF9hbW91bnQiOiIwLjAzOTcyMjk0IiwiZmVlIjoiMC4wMDAwMDAwMCIsImZlZV9zeW1ib2wiOiIiLCJjb21tZW50Ijoi5Y2W5Ye6RVRIIiwiYmlsbF90eXBlIjozfSx7ImNyZWF0ZWRBdCI6IjIwMTgtMDEtMzBUMTc6Mzk6MzIuMDAwWiIsInN5bWJvbCI6IkhQQiIsImNoYW5nZV9hbW91bnQiOiIrMzQuMDAwMDAwMDAiLCJyZXN1bHRfYW1vdW50IjoiMjIxLjM5ODUwMDAwIiwiZmVlIjoiMC4wMDAwMDAwMCIsImZlZV9zeW1ib2wiOiIiLCJjb21tZW50Ijoi5Lmw5YWlSFBCIiwiYmlsbF90eXBlIjo1fSx7ImNyZWF0ZWRBdCI6IjIwMTgtMDEtMzBUMTc6Mzk6MjguMDAwWiIsInN5bWJvbCI6IkVUSCIsImNoYW5nZV9hbW91bnQiOiItMC4wMDk5MTkzNCIsInJlc3VsdF9hbW91bnQiOiIwLjI3OTc2Mzk2IiwiZmVlIjoiMC4wMDAwMDAwMCIsImZlZV9zeW1ib2wiOiIiLCJjb21tZW50Ijoi5Y2W5Ye6RVRIIiwiYmlsbF90eXBlIjozfSx7ImNyZWF0ZWRBdCI6IjIwMTgtMDEtMzBUMTc6Mzk6MjguMDAwWiIsInN5bWJvbCI6IkhQQiIsImNoYW5nZV9hbW91bnQiOiIrMS40MDUwMDAwMCIsInJlc3VsdF9hbW91bnQiOiIxODcuMzk4NTAwMDAiLCJmZWUiOiIwLjAwMDAwMDAwIiwiZmVlX3N5bWJvbCI6IiIsImNvbW1lbnQiOiLkubDlhaVIUEIiLCJiaWxsX3R5cGUiOjV9LHsiY3JlYXRlZEF0IjoiMjAxOC0wMS0zMFQxNzozOToxOS4wMDBaIiwic3ltYm9sIjoiRVRIIiwiY2hhbmdlX2Ftb3VudCI6Ii0wLjMzOTM4MjcwIiwicmVzdWx0X2Ftb3VudCI6IjAuMjg5NjgzMzEiLCJmZWUiOiIwLjAwMDAwMDAwIiwiZmVlX3N5bWJvbCI6IiIsImNvbW1lbnQiOiLljZblh7pFVEgiLCJiaWxsX3R5cGUiOjN9LHsiY3JlYXRlZEF0IjoiMjAxOC0wMS0zMFQxNzozOToxOS4wMDBaIiwic3ltYm9sIjoiSFBCIiwiY2hhbmdlX2Ftb3VudCI6Iis0OC4wNzEwMDAwMCIsInJlc3VsdF9hbW91bnQiOiIxODUuOTkzNTAwMDAiLCJmZWUiOiIwLjAwMDAwMDAwIiwiZmVlX3N5bWJvbCI6IiIsImNvbW1lbnQiOiLkubDlhaVIUEIiLCJiaWxsX3R5cGUiOjV9LHsiY3JlYXRlZEF0IjoiMjAxOC0wMS0zMFQxNjo0ODowOS4wMDBaIiwic3ltYm9sIjoiRVRIIiwiY2hhbmdlX2Ftb3VudCI6Ii0wLjExMzUzMjc5IiwicmVzdWx0X2Ftb3VudCI6IjAuNjI5MDY2MDIiLCJmZWUiOiIwLjAwMDAwMDAwIiwiZmVlX3N5bWJvbCI6IiIsImNvbW1lbnQiOiLljZblh7pFVEgiLCJiaWxsX3R5cGUiOjN9LHsiY3JlYXRlZEF0IjoiMjAxOC0wMS0zMFQxNjo0ODowOS4wMDBaIiwic3ltYm9sIjoiSFBCIiwiY2hhbmdlX2Ftb3VudCI6IisxNS43MjU3MDAwMCIsInJlc3VsdF9hbW91bnQiOiIxMzcuOTIyNTAwMDAiLCJmZWUiOiIwLjAwMDAwMDAwIiwiZmVlX3N5bWJvbCI6IiIsImNvbW1lbnQiOiLkubDlhaVIUEIiLCJiaWxsX3R5cGUiOjV9LHsiY3JlYXRlZEF0IjoiMjAxOC0wMS0zMFQxNjo0ODowNy4wMDBaIiwic3ltYm9sIjoiRVRIIiwiY2hhbmdlX2Ftb3VudCI6Ii0wLjAwOTY5MTU1IiwicmVzdWx0X2Ftb3VudCI6IjAuNzQyNTk4ODIiLCJmZWUiOiIwLjAwMDAwMDAwIiwiZmVlX3N5bWJvbCI6IiIsImNvbW1lbnQiOiLljZblh7pFVEgiLCJiaWxsX3R5cGUiOjN9LHsiY3JlYXRlZEF0IjoiMjAxOC0wMS0zMFQxNjo0ODowNy4wMDBaIiwic3ltYm9sIjoiSFBCIiwiY2hhbmdlX2Ftb3VudCI6IisxLjM0MjQwMDAwIiwicmVzdWx0X2Ftb3VudCI6IjEyMi4xOTY4MDAwMCIsImZlZSI6IjAuMDAwMDAwMDAiLCJmZWVfc3ltYm9sIjoiIiwiY29tbWVudCI6IuS5sOWFpUhQQiIsImJpbGxfdHlwZSI6NX0seyJjcmVhdGVkQXQiOiIyMDE4LTAxLTMwVDE2OjQ3OjEwLjAwMFoiLCJzeW1ib2wiOiJFVEgiLCJjaGFuZ2VfYW1vdW50IjoiLTAuMDc2MjU0NTQiLCJyZXN1bHRfYW1vdW50IjoiMC43NTIyOTAzOCIsImZlZSI6IjAuMDAwMDAwMDAiLCJmZWVfc3ltYm9sIjoiIiwiY29tbWVudCI6IuWNluWHukVUSCIsImJpbGxfdHlwZSI6M30seyJjcmVhdGVkQXQiOiIyMDE4LTAxLTMwVDE2OjQ3OjEwLjAwMFoiLCJzeW1ib2wiOiJIUEIiLCJjaGFuZ2VfYW1vdW50IjoiKzEwLjU2MjIwMDAwIiwicmVzdWx0X2Ftb3VudCI6IjEyMC44NTQ0MDAwMCIsImZlZSI6IjAuMDAwMDAwMDAiLCJmZWVfc3ltYm9sIjoiIiwiY29tbWVudCI6IuS5sOWFpUhQQiIsImJpbGxfdHlwZSI6NX0seyJjcmVhdGVkQXQiOiIyMDE4LTAxLTMwVDE2OjQ3OjAyLjAwMFoiLCJzeW1ib2wiOiJFVEgiLCJjaGFuZ2VfYW1vdW50IjoiLTAuNDk2MDk5OTciLCJyZXN1bHRfYW1vdW50IjoiMC44Mjg1NDQ5MyIsImZlZSI6IjAuMDAwMDAwMDAiLCJmZWVfc3ltYm9sIjoiIiwiY29tbWVudCI6IuWNluWHukVUSCIsImJpbGxfdHlwZSI6M30seyJjcmVhdGVkQXQiOiIyMDE4LTAxLTMwVDE2OjQ3OjAyLjAwMFoiLCJzeW1ib2wiOiJIUEIiLCJjaGFuZ2VfYW1vdW50IjoiKzY4LjcxNjAwMDAwIiwicmVzdWx0X2Ftb3VudCI6IjExMC4yOTIyMDAwMCIsImZlZSI6IjAuMDAwMDAwMDAiLCJmZWVfc3ltYm9sIjoiIiwiY29tbWVudCI6IuS5sOWFpUhQQiIsImJpbGxfdHlwZSI6NX0seyJjcmVhdGVkQXQiOiIyMDE4LTAxLTMwVDE2OjM4OjM5LjAwMFoiLCJzeW1ib2wiOiJFVEgiLCJjaGFuZ2VfYW1vdW50IjoiLTAuMzAwMTYyMjkiLCJyZXN1bHRfYW1vdW50IjoiMS4zMjQ2NDQ5MSIsImZlZSI6IjAuMDAwMDAwMDAiLCJmZWVfc3ltYm9sIjoiIiwiY29tbWVudCI6IuWNluWHukVUSCIsImJpbGxfdHlwZSI6M30seyJjcmVhdGVkQXQiOiIyMDE4LTAxLTMwVDE2OjM4OjM5LjAwMFoiLCJzeW1ib2wiOiJIUEIiLCJjaGFuZ2VfYW1vdW50IjoiKzQxLjU3NjIwMDAwIiwicmVzdWx0X2Ftb3VudCI6IjQxLjU3NjIwMDAwIiwiZmVlIjoiMC4wMDAwMDAwMCIsImZlZV9zeW1ib2wiOiIiLCJjb21tZW50Ijoi5Lmw5YWlSFBCIiwiYmlsbF90eXBlIjo1fSx7ImNyZWF0ZWRBdCI6IjIwMTgtMDEtMzBUMTA6MzA6MjYuMDAwWiIsInN5bWJvbCI6IkVUSCIsImNoYW5nZV9hbW91bnQiOiItMC42NjUyMzAwMCIsInJlc3VsdF9hbW91bnQiOiIxLjYyNDgwNzIxIiwiZmVlIjoiMC4wMDAwMDAwMCIsImZlZV9zeW1ib2wiOiIiLCJjb21tZW50Ijoi5Y2W5Ye6RVRIIiwiYmlsbF90eXBlIjozfSx7ImNyZWF0ZWRBdCI6IjIwMTgtMDEtMzBUMTA6MzA6MjYuMDAwWiIsInN5bWJvbCI6IkJJWCIsImNoYW5nZV9hbW91bnQiOiIrNTAwLjAwMDAwMDAwIiwicmVzdWx0X2Ftb3VudCI6IjUwMC4wMDAwMDAwMCIsImZlZSI6IjAuMDAwMDAwMDAiLCJmZWVfc3ltYm9sIjoiIiwiY29tbWVudCI6IuS5sOWFpUJJWCIsImJpbGxfdHlwZSI6NX0seyJjcmVhdGVkQXQiOiIyMDE4LTAxLTI5VDIwOjQyOjA5LjAwMFoiLCJzeW1ib2wiOiJFVEgiLCJjaGFuZ2VfYW1vdW50IjoiKzEuMDAwMDAwMDAiLCJyZXN1bHRfYW1vdW50IjoiMi4yOTAwMzcyMiIsImZlZSI6IjAuMDAwMDAwMDAiLCJmZWVfc3ltYm9sIjoiIiwiY29tbWVudCI6IuWFheWAvOWIsOi0piIsImJpbGxfdHlwZSI6MH0seyJjcmVhdGVkQXQiOiIyMDE4LTAxLTI5VDE4OjMyOjA5LjAwMFoiLCJzeW1ib2wiOiJFVEgiLCJjaGFuZ2VfYW1vdW50IjoiKzEuMjkwMDM3MjIiLCJyZXN1bHRfYW1vdW50IjoiMS4yOTAwMzcyMiIsImZlZSI6IjAuMDAwMDAwMDAiLCJmZWVfc3ltYm9sIjoiIiwiY29tbWVudCI6IuWFheWAvOWIsOi0piIsImJpbGxfdHlwZSI6MH1dfSwiY21kIjoidHJhbnNmZXIvYmlsbHMifV19
+    http_version: 
+  recorded_at: Tue, 30 Jan 2018 22:28:27 GMT
+recorded_with: VCR 4.0.0
