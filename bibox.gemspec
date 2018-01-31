@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Sebastian Johnsson"]
   spec.email         = ["sebastian.johnsson@gmail.com"]
 
-  spec.summary       = %q{Ruby client for Bibox's API'}
-  spec.description   = %q{Ruby REST client for crypto currency exchange Bibox}
+  spec.summary       = %q{Ruby REST + Websocket clients for Bibox's API'}
+  spec.description   = %q{Ruby REST + Websocket clients for crypto currency exchange Bibox's API'}
   spec.homepage      = "https://github.com/SebastianJ/bibox"
   spec.license       = "MIT"
 
