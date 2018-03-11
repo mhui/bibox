@@ -25,7 +25,7 @@ module Bibox
         def transferInfo(symbol = "BTC", options: {})
           payload = [
             {
-              cmd:  'transfer/transferInfo',
+              cmd:  'transfer/transferOutInfo',
               body: {coin_symbol: symbol}
             }
           ]
