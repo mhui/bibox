@@ -8,7 +8,7 @@ module Bibox
         high:              :float,
         low:               :float,
         last:              :float,
-        vol24H:            :float,
+        vol24_h:            :float,
         amount:            :float,
         change:            :string,
         percent:           :string,
