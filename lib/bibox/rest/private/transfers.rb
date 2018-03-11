@@ -21,6 +21,17 @@ module Bibox
         def withdrawals(page: 1, size: 10, filter_type: :all, search: nil, options: {})
           transfers(command: "transfer/transferOutList", page: page, size: size, filter_type: filter_type, search: search, options: options)
         end
+
+        def transferInfo(symbol = "BTC", options: {})
+          payload = [
+            {
+              cmd:  'transfer/transferInfo',
+              body: {coin_symbol: symbol}
+            }
+          ]
+
+          response  = parse(post("/transfer", data: payload, options: options))&.fetch("result", [])&.first&.fetch("result", {})
+        end
         
         def transfers(command:, page: 1, size: 10, filter_type: :all, search: nil, options: {})
           params      =   {
